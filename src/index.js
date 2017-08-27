@@ -8,25 +8,18 @@ class HelloWorld extends React.Component {
         super();
 
         this.state = {
-            contents: [
-                { title: 'title1' },
-                { title: 'title2' },
-                { title: 'title3' },
-                { title: 'title4' },
-                { title: 'title5' }
-            ]
+            contents: []
         };
-        // axios -> promise
-        // Axios.get('https://s3.ap-northeast-2.amazonaws.com/hyungu/sample.json')
-        //     .then(response => {
-        //         this.setState({
-        //             contents: response.data.contents
-        //         })
-        //     })
-        //     .catch(error => {
-        //         console.log('catch');
-        //         console.log(error);
-        //     });
+        Axios.get('https://s3.ap-northeast-2.amazonaws.com/hyungu/sample.json')
+            .then(response => {
+                this.setState({
+                    contents: response.data.contents
+                })
+            })
+            .catch(error => {
+                console.log('catch');
+                console.log(error);
+            });
     }
 
     render() {
