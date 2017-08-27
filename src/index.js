@@ -45,9 +45,9 @@ class HelloWorld extends React.Component {
     }
 
     renderContents() {
-        // return this.state.contents
-        //     .filter((item, i) => i === 0 )
-        //     .map((item, i) => <div key={ `content-${i}` }>{ item.title }</div>)
+        return this.state.contents
+            .filter((item, i) => i === 0 )
+            .map((item, i) => <div key={ `content-${i}` }>{ item.title }</div>)
     }
 }
 
