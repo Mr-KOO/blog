@@ -1,5 +1,7 @@
 import React from 'react';
+import { Nav } from '../nav';
 const style = require('./style.pcss');
+
 
 export class Profile extends React.Component{
     render(){
@@ -28,19 +30,20 @@ export class Profile extends React.Component{
                                 </a>
                             </div>
                         </div>
-                        <div>
-                            <button className={ style.followBtn}>
+                        <div className= { style.btnBox }>
+                            <button className={ style.followBtn }>
                                 <span>Follow</span>
+                            </button>
+                            <button className={ style.followOpt }>
+                                <svg width="21" height="21" viewBox="0 0 21 21">
+                                    <path d="M4 7.331l6.032 6.67.495.547.495-.547 5.973-6.603-.989-.895-5.974 6.603h.99l-6.033-6.67z" fill-rule="evenodd">
+                                    </path>
+                                </svg>
                             </button>
                         </div>
                     </div>
                 </div>
-                <nav className={ style.navBar }>
-                    <ul>
-                        <li>Profile</li>
-                        <li>Latest</li>
-                    </ul>
-                </nav>
+                <Nav />
             </div>
         )
     }

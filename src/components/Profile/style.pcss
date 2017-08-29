@@ -1,9 +1,9 @@
 .wrap{
-  height: 330px;
+  height: 300px;
 }
 .container{
   width: 600px;
-  height: 230px;
+  height: 200px;
   padding: 20px;
   margin: 0 auto;
 }
@@ -16,27 +16,65 @@
 
 .description{
   color: rgba(0,0,0,.6);
+  margin-top: 6px;
 }
+
+.avatarBox{
+  position: relative;
+  width: 600px;
+  height: 120px;
+}
+
+.avatarInfo{
+  width: 400px;
+}
+
+.avatar{
+  position: absolute;
+  top: 50%;
+  margin: -50px 0 0 480px;
+  width: 100px;
+  height: 100px;
+}
+
+.avatarImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
 .snsBox{
   color: rgba(0,0,0,.44);
   position: relative;
+  height: 36px;
 }
 .followTxt{
+  display: inline-block;
   margin: 0;
   padding-right: 8px;
 }
 
 .followerTxt{
+  display: inline-block;
   margin: 0;
   padding: 0 8px;
 }
 .snsImgBox{
+  position: absolute;
   display: inline-block;
   width: 21px;
   height: 35px;
+  top: 50%;
+  margin-top: -17.5px;
+  margin-left: 30px;
   fill: rgba(0,0,0,.44);
 }
 
+.btnBox{
+  width: 110px;
+  height: 38px;
+  position: relative;
+}
 
 .followBtn {
   height: 37px;
@@ -53,47 +91,15 @@
   font-weight: 400;
 }
 
-
-.avatarBox{
-  height: 130px;
-  vertical-align: top;
-}
-
-.avatarInfo{
-  width: 500px;
-  display: inline-block;
-}
-
-.avatar{
-  width: 100px;
-  height: 100px;
-  display: inline-block;
-  position: relative;
-}
-
-.avatarImg {
-  width: 100px;
-  height: 100px;
-  border-radius: 100%;
-}
-
-
-.navBar{
+.followOpt{
+  box-shadow: none;
+  white-space: normal;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  fill: rgba(0,0,0,.44);
+  height: 21px;
   position: absolute;
-  width: 600px;
-  height: 50px;
-  left: calc(50% - 300px);
-  border-top: 1px solid rgba(0,0,0,.05);
-}
-
-.navBar ul{
-  text-align: left;
-}
-
-.navBar ul li{
-  list-style: none;
-  float: left;
-  display: table-cell;
-  padding: 0 20px 15px 0;
-  font-size: 16px;
+  top: 50%;
+  margin-top: -10.5px;
 }
