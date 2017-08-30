@@ -7,7 +7,7 @@ export class Nav extends React.Component{
             <div className={ style.navBar }>
                 <ul>
                     <li><a href="././index.html">Profile</a></li>
-                    <li><a>Latest</a></li>
+                    <li><a href="././index.html">Latest</a></li>
                 </ul>
             </div>
         )

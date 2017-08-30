@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Axios from 'axios';
 import { App } from './containers/app';
-const style = require('./style.pcss');
 //
 // class HelloWorld extends React.Component {
 //     constructor() {

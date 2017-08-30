@@ -1,3 +1,5 @@
+@import "../../properties.pcss";
+
 .wrap{
   height: 300px;
 }
@@ -14,8 +16,8 @@
   margin: 0;
 }
 
-.description{
-  color: rgba(0,0,0,.6);
+  .description{
+    color: rgba(0,0,0,.6);
   margin-top: 6px;
 }
 
@@ -44,7 +46,7 @@
 }
 
 .snsBox{
-  color: rgba(0,0,0,.44);
+  color: var(--textcolor);
   position: relative;
   height: 36px;
 }
@@ -67,7 +69,7 @@
   top: 50%;
   margin-top: -17.5px;
   margin-left: 30px;
-  fill: rgba(0,0,0,.44);
+  fill: var(--textcolor);
 }
 
 .btnBox{
@@ -79,13 +81,13 @@
 .followBtn {
   height: 37px;
   padding: 0 16px;
-  color: #02b875;
+  color: var(--linkcolor);
   background: rgba(0, 0, 0, 0);
   font-size: 14px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #02b875;
+  border: 1px solid var(--linkcolor);
   white-space: nowrap;
   border-radius: 999em;
   font-weight: 400;
@@ -97,7 +99,7 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  fill: rgba(0,0,0,.44);
+  fill: var(--linkcolor);
   height: 21px;
   position: absolute;
   top: 50%;
