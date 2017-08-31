@@ -1,6 +1,6 @@
 import React from 'react';
 import { Header } from '../components/header';
-import { Profile } from "../components/Profile";
+import { Profile } from "../components/profile";
 import {Contents} from "../components/contents/index";
 
 export class App extends React.Component{

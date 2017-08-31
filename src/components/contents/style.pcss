@@ -1,3 +1,176 @@
+@import "../../properties.pcss";
+
 .wrap{
   background-color: rgb(250, 250, 250);
+  border-top: 2px solid rgb(238, 238, 238);
+}
+
+.container{
+  width: 640px;
+  margin: 0 auto;
+}
+
+.latest{
+  padding: 30px 20px 20px 20px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.postBox{
+  width: 600px;
+  height: 420px;
+  padding: 10px 20px 15px 20px;
+  background-color: white;
+  border: 1px solid rgb(238, 238, 238);
+}
+
+.profile{
+  width: 600px;
+  height: 38px;
+  padding-top: 5px;
+  margin-bottom: 15px;
+  vertical-align: middle;
+  position: relative;
+}
+
+.avatar{
+  display: inline-block;
+  position: absolute;
+  height: 38px;
+}
+
+.avatarImg{
+  border-radius: 100%;
+  width: 38px;
+  height: 38px;
+}
+
+.profileInfo{
+  display: inline-block;
+  width: 150px;
+  height: 38px;
+  margin-left: 50px;
+  margin-top: 4px;
+  color: var(--textcolor);
+  font-size: 12px;
+}
+
+.profileHeader{
+  color: var(--linkcolor);
+  text-decoration: none;
+}
+.postArticle{
+  width: 600px;
+}
+
+.postHeader{
+  font-size: 29px;
+  margin-top: 0;
+  line-height: 1.12;
+  letter-spacing: -.022em;
+}
+
+.postImgBox{
+  overflow: hidden;
+  width: 600px;
+  height: 180px;
+  position: relative;
+}
+
+.postImg{
+  position: absolute;
+  width: 600px;
+  height: auto;
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
+  margin: auto;
+}
+
+.readMore{
+  margin-top: 10px;
+  color: var(--textcolor);
+  font-size: 12px;
+}
+
+.btnBox{
+  width: 600px;
+  height: 38px;
+  padding-top: 15px;
+}
+
+.clapBox{
+  width: 85px;
+  height: 38px;
+  display: inline-block;
+  position: relative;
+}
+
+.clap{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  padding-top: -19px;
+}
+
+.clapCount{
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  color: var(--textcolor);
+  font-size: 18px;
+  position: absolute;
+  margin-top: 4px;
+  padding-left: 30px;
+}
+
+.markBox{
+  display: inline-block;
+  width: 300px;
+  height: 38px;
+  position: relative;
+  left: 62%;
+}
+
+.responses{
+  color: var(--textcolor);
+  width: 85px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.optBtn{
+  width: 60px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  margin-top: -19px;
+}
+
+.bookMark{
+  display: inline-block;
+  box-shadow: none;
+  white-space: normal;
+  background-color: transparent;
+  border: none;
+  fill: var(--textcolor);
+  width: 25px;
+  height: 25px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.storyOpt{
+  display: inline-block;
+  box-shadow: none;
+  white-space: normal;
+  background-color: transparent;
+  border: none;
+  fill: var(--textcolor);
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
 }
