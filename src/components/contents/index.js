@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Avatar } from "../avatar/index";
 const style = require('./style.pcss');
 
 export class Contents extends React.Component{
@@ -10,35 +12,21 @@ export class Contents extends React.Component{
                         Latest
                     </div>
                     <div className={ style.postBox }>
-                        <div className={ style.profile }>
-                            <div className={ style.avatar }>
-                                <a href="././index.html">
-                                    <img src="https://cdn-images-1.medium.com/fit/c/48/48/0*661xPjkhrX9h6GVR." className={ style.avatarImg } />
-                                </a>
-                            </div>
-                            <div className={ style.profileInfo }>
-                                <a className={ style.profileHeader } href="././index.html">
-                                    Lee Hyungu
-                                </a><br />
-                                <a>
-                                    Aug 30
-                                </a>
-                                <span> · </span>
-                                <span>9 min read</span>
-                            </div>
-                        </div>
+                        <Avatar />
                         <div className={ style.postArticle }>
-                            <h3 className={ style.postHeader }>Want to Become the Best at What You Do? Read this.</h3>
+                            <Link to = "/about" className={ style.postHeader }>
+                                Want to Become the Best at What You Do? Read this.
+                            </Link>
                             <div className={ style.postImgBox }>
-                                <a>
+                                <Link to = "/about">
                                     <img src="https://cdn-images-1.medium.com/max/1500/1*c3INaGwFw9CsqYleHHicEw.jpeg" className={ style.postImg } />
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className={ style.readMore }>
-                            <a>
+                            <Link to = "/about" className={ style.readMoretxt }>
                                 Read more...
-                            </a>
+                            </Link>
                         </div>
                         <div className={ style.btnBox }>
                             <div className={ style.clapBox}>

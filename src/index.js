@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Axios from 'axios';
 import { App } from './containers/app';
-//
+//import Axios from 'axios';
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root')
+);
+
+
 // class HelloWorld extends React.Component {
 //     constructor() {
 //         super();
@@ -40,8 +46,3 @@ import { App } from './containers/app';
 //     //         .map((item, i) => <div key={ `content-${i}` }>{ item.title }</div>)
 //     // }
 // }
-
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-);

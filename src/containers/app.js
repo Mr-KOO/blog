@@ -1,16 +1,19 @@
 import React from 'react';
-import { Header } from '../components/header';
-import { Profile } from "../components/profile";
-import {Contents} from "../components/contents/index";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Home } from '../routes/Home';
+import { About } from '../routes/About';
 
-export class App extends React.Component{
-    render(){
-        return(
-            <div className="container">
-                <Header/>
-                <Profile/>
-                <Contents/>
-            </div>
+export class App extends React.Component {
+    render() {
+        return (
+            <Router>
+                <div>
+                    <switch>
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/about" component={About}/>
+                    </switch>
+                </div>
+            </Router>
         )
     }
 }
