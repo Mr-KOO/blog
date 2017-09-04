@@ -13,8 +13,8 @@ export class About extends React.Component{
                 <div className={ style.container } >
                     <Avatar/>
                     <Posts/>
-                    <Footer/>
                 </div>
+                <Footer/>
             </div>
         )
     }
